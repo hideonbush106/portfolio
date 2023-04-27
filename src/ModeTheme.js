@@ -1,4 +1,4 @@
-import { amber, grey } from "@mui/material/colors";
+import { amber, blue, grey } from "@mui/material/colors";
 
 const getDesignTokens = (mode) => ({
     palette: {
@@ -6,13 +6,13 @@ const getDesignTokens = (mode) => ({
         primary: {
             ...amber,
             ...(mode === "dark" && {
-                main: amber[300],
+                main: amber[500],
             }),
         },
         ...(mode === "dark" && {
             background: {
-                default: '#060e17',
-                paper: '#060e17',
+                default: '#0a1929',
+                paper: '#0a1929',
             },
         }),
         text: {

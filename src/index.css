@@ -47,3 +47,7 @@ a:visited {
   color: inherit;
   cursor: pointer;
 }
+
+body {
+  overflow-x: hidden;
+}

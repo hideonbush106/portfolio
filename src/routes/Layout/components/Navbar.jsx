@@ -66,7 +66,9 @@ function DrawerAppBar(props) {
               }`}
               sx={{ textAlign: "center" }}
             >
-              <ListItemText primary={item} />
+              <ListItemText
+                primary={item}
+              />
             </ListItemButton>
           </ListItem>
         ))}
@@ -95,7 +97,6 @@ function DrawerAppBar(props) {
         component="nav"
         sx={{
           bgcolor: "#0000",
-          boxShadow: 0,
           backdropFilter: "blur(5px)",
         }}
       >

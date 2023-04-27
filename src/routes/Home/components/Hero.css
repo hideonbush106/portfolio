@@ -1,0 +1,36 @@
+@media screen and (min-width: 0px) {
+  .Typewriter__wrapper {
+    font-size: 2rem !important;
+    letter-spacing: 0.1rem;
+  }
+
+  .Typewriter__cursor {
+    font-size: 2rem !important;
+    letter-spacing: 0.1rem;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .Typewriter__wrapper {
+    font-size: 3rem !important;
+    letter-spacing: 0.1rem;
+  }
+
+  .Typewriter__cursor {
+    font-size: 3rem !important;
+    letter-spacing: 0.1rem;
+  }
+}
+
+.Typewriter__wrapper {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 1.25;
+}
+
+.Typewriter__cursor {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 1.25;
+  color: green;
+}

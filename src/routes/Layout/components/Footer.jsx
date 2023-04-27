@@ -4,7 +4,7 @@ import useTheme from "@mui/material/styles/useTheme";
 import { blueGrey } from "@mui/material/colors";
 import Typography from "@mui/material/Typography";
 import { Link } from "react-router-dom";
-import { FacebookRounded, GitHub, LinkedIn } from "@mui/icons-material";
+import { Email, FacebookRounded, GitHub, LinkedIn } from "@mui/icons-material";
 
 const Footer = () => {
   const theme = useTheme();
@@ -37,7 +37,9 @@ const Footer = () => {
             textAlign: { sm: "left", xs: "center" },
             textDecoration: "none",
             color: `${
-              theme.palette.mode === "dark" ? "#ffb300 !important" : "#6e07f3 !important"
+              theme.palette.mode === "dark"
+                ? "#ffb300 !important"
+                : "#6e07f3 !important"
             }`,
             letterSpacing: 2,
             fontWeight: "700",
@@ -69,11 +71,14 @@ const Footer = () => {
           justifyContent: { sm: "flex-end", xs: "center" },
         }}
       >
-        <a href="https://www.linkedin.com/in/phonghoai/">
+        <a target="_blank" href="https://www.linkedin.com/in/phonghoai/">
           <LinkedIn sx={iconStyle} />
         </a>
-        <a href="https://github.com/hideonbush106">
+        <a target="_blank" href="https://github.com/hideonbush106">
           <GitHub sx={iconStyle} />
+        </a>
+        <a target="_blank" href="mailto:andyhoaiphong2003@gmail.com">
+          <Email sx={iconStyle} />
         </a>
       </Box>
     </Box>
