@@ -2,7 +2,7 @@ import React from "react";
 import Typewriter from "typewriter-effect";
 import { Box, Button, Typography } from "@mui/material";
 import "./Hero.css";
-import { Fade } from "react-awesome-reveal";
+import { AttentionSeeker, Fade } from "react-awesome-reveal";
 
 const Hero = () => {
   return (
@@ -47,10 +47,9 @@ const Hero = () => {
             }}
           ></Typography>
         </Box>
-        <Fade direction="up">
+        <AttentionSeeker effect="headShake" duration={1100}>
           <Typography
             variant="h5"
-            className="animate__fadeInDown"
             sx={{
               textDecoration: "none",
               color: "inherit",
@@ -74,11 +73,11 @@ const Hero = () => {
           >
             Download CV
           </Button>
-        </Fade>
+        </AttentionSeeker>
       </Box>
       <Box
-        component={Fade}
-        direction="up"
+        component={AttentionSeeker}
+        effect="headShake" duration={1100}
         sx={{
           width: { xs: "100%", sm: "50%" },
         }}

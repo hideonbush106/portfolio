@@ -1,7 +1,7 @@
 import useTheme from "@mui/material/styles/useTheme";
 import { Box, Typography } from "@mui/material";
 import React from "react";
-import { Fade } from "react-awesome-reveal";
+import { Fade, AttentionSeeker } from "react-awesome-reveal";
 const Intro = () => {
   const theme = useTheme();
   return (
@@ -9,7 +9,7 @@ const Intro = () => {
       bgcolor={theme.palette.mode === "dark" ? "#323f4a" : "#6e07f3"}
       sx={{ color: "#FFF", py: 10, px: 4 }}
     >
-      <Fade direction="up" fraction={0.9}>
+      <AttentionSeeker effect="headShake" duration={1100}>
         <Typography sx={{ textAlign: "center" }} variant="h4">
           I am Nguyen Hoai Phong. Nice to meet you.
         </Typography>
@@ -26,7 +26,7 @@ const Intro = () => {
           I am a wandering Front-end developer finding my way to Full Stack
           developer. I love self-learning and exproing things.
         </Typography>
-      </Fade>
+      </AttentionSeeker>
     </Box>
   );
 };

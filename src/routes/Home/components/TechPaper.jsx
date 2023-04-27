@@ -6,7 +6,6 @@ const TechPaper = ({ children, ...props }) => {
     py: 5,
     px: 5,
     width: "100%",
-    margin: 2,
   };
   const techTitle = { textAlign: "center", marginBottom: 2 };
   return (

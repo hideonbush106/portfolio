@@ -25,7 +25,7 @@ import {
   SiVercel,
 } from "react-icons/si";
 import { TbSql } from "react-icons/tb";
-import { AttentionSeeker, Fade } from "react-awesome-reveal";
+import { AttentionSeeker, Fade, Slide } from "react-awesome-reveal";
 
 const Tech = () => {
   const iconTitle = { textAlign: "center", marginBottom: "2.5rem" };
@@ -131,7 +131,7 @@ const Tech = () => {
   };
   return (
     <Box>
-      <Fade direction="down" fraction={0.9}>
+      <AttentionSeeker effect="headShake" duration={1100}>
         <Typography
           variant="h4"
           sx={{ marginTop: 9, textAlign: "center", width: "100%" }}
@@ -145,7 +145,7 @@ const Tech = () => {
           This is what I've learned in my career. I'm focusing on Front-end
           development and praticing Back-end development
         </Typography>
-      </Fade>
+      </AttentionSeeker>
       <Box
         sx={{
           py: 10,
@@ -158,9 +158,9 @@ const Tech = () => {
       >
         <Box
           component={AttentionSeeker}
-          sx={{ width: { xs: "80%", sm: "20%" } }}
-          duration={1000}
-          effect="pulse"
+          sx={{ width: { xs: "100%", sm: "20%" }, my: 2 }}
+          effect="headShake"
+          duration={1100}
         >
           <TechPaper title="Languages">
             <FaHtml5 style={htmlStyle} />
@@ -187,9 +187,9 @@ const Tech = () => {
         </Box>
         <Box
           component={AttentionSeeker}
-          sx={{ width: { xs: "80%", sm: "20%" } }}
-          duration={1000}
-          effect="pulse"
+          sx={{ width: { xs: "100%", sm: "20%" }, my: 2 }}
+          effect="headShake"
+          duration={1100}
         >
           <TechPaper title="Front-end">
             <FaBootstrap style={bootstrapStyle} />
@@ -216,9 +216,9 @@ const Tech = () => {
         </Box>
         <Box
           component={AttentionSeeker}
-          sx={{ width: { xs: "80%", sm: "20%" } }}
-          duration={1000}
-          effect="pulse"
+          sx={{ width: { xs: "100%", sm: "20%" }, my: 2 }}
+          effect="headShake"
+          duration={1100}
         >
           <TechPaper title="Back-end">
             <FaNodeJs style={nodejsStyle} />
@@ -245,9 +245,9 @@ const Tech = () => {
         </Box>
         <Box
           component={AttentionSeeker}
-          sx={{ width: { xs: "80%", sm: "20%" } }}
-          duration={1000}
-          effect="pulse"
+          sx={{ width: { xs: "100%", sm: "20%" }, my: 2 }}
+          effect="headShake"
+          duration={1100}
         >
           <TechPaper title="Tools and others">
             <FaNpm style={npmStyle} />
