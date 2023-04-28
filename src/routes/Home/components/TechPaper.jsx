@@ -4,7 +4,7 @@ import React, { Children } from "react";
 const TechPaper = ({ children, ...props }) => {
   const techPaper = {
     py: 5,
-    px: 5,
+    px: 2.5,
     width: "100%",
   };
   const techTitle = { textAlign: "center", marginBottom: 2 };

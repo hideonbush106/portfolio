@@ -140,7 +140,12 @@ const Tech = () => {
         </Typography>
         <Typography
           variant="h6"
-          sx={{ marginTop: 3, textAlign: "center", width: "100%" }}
+          sx={{
+            textAlign: "center",
+            my: 3,
+            width: { xs: "80%", sm: "60%" },
+            mx: "auto",
+          }}
         >
           This is what I've learned in my career. I'm focusing on Front-end
           development and praticing Back-end development.
@@ -166,23 +171,23 @@ const Tech = () => {
         >
           <TechPaper title="Languages">
             <FaHtml5 style={htmlStyle} />
-            <Typography variant="h6" sx={iconTitle}>
+            <Typography variant="subtitle1" sx={iconTitle}>
               HTML5
             </Typography>
             <FaCss3 style={cssStyle} />
-            <Typography variant="h6" sx={iconTitle}>
+            <Typography variant="subtitle1" sx={iconTitle}>
               CSS3
             </Typography>
             <IoLogoJavascript style={jsStyle} />
-            <Typography variant="h6" sx={iconTitle}>
+            <Typography variant="subtitle1" sx={iconTitle}>
               Javascript
             </Typography>
             <FaCoffee style={javaStyle} />
-            <Typography variant="h6" sx={iconTitle}>
+            <Typography variant="subtitle1" sx={iconTitle}>
               Java
             </Typography>
             <TbSql style={sqlStyle} />
-            <Typography variant="h6" sx={iconTitle}>
+            <Typography variant="subtitle1" sx={iconTitle}>
               SQL
             </Typography>
           </TechPaper>
@@ -198,23 +203,23 @@ const Tech = () => {
         >
           <TechPaper title="Front-end">
             <FaBootstrap style={bootstrapStyle} />
-            <Typography variant="h6" sx={iconTitle}>
+            <Typography variant="subtitle1" sx={iconTitle}>
               Bootstrap
             </Typography>
             <SiTailwindcss style={tailwindStyle} />
-            <Typography variant="h6" sx={iconTitle}>
+            <Typography variant="subtitle1" sx={iconTitle}>
               TailwindCSS
             </Typography>
             <FaReact style={reactStyle} />
-            <Typography variant="h6" sx={iconTitle}>
+            <Typography variant="subtitle1" sx={iconTitle}>
               ReactJS
             </Typography>
             <SiReactrouter style={reactrouterStyle} />
-            <Typography variant="h6" sx={iconTitle}>
+            <Typography variant="subtitle1" sx={iconTitle}>
               React router
             </Typography>
             <SiRedux style={reduxStyle} />
-            <Typography variant="h6" sx={iconTitle}>
+            <Typography variant="subtitle1" sx={iconTitle}>
               Redux
             </Typography>
           </TechPaper>
@@ -229,23 +234,23 @@ const Tech = () => {
         >
           <TechPaper title="Back-end">
             <FaNodeJs style={nodejsStyle} />
-            <Typography variant="h6" sx={iconTitle}>
+            <Typography variant="subtitle1" sx={iconTitle}>
               NodeJS
             </Typography>
             <SiMongodb style={mongodbStyle} />
-            <Typography variant="h6" sx={iconTitle}>
+            <Typography variant="subtitle1" sx={iconTitle}>
               MongoDB
             </Typography>
             <SiExpress style={expressStyle} />
-            <Typography variant="h6" sx={iconTitle}>
+            <Typography variant="subtitle1" sx={iconTitle}>
               ExpressJS
             </Typography>
             <SiMicrosoftsqlserver style={sqlserverStyle} />
-            <Typography variant="h6" sx={iconTitle}>
+            <Typography variant="subtitle1" sx={iconTitle}>
               Microsoft SQL Server
             </Typography>
             <FaCoffee style={javaStyle} />
-            <Typography variant="h6" sx={iconTitle}>
+            <Typography variant="subtitle1" sx={iconTitle}>
               Java Servlet
             </Typography>
           </TechPaper>
@@ -260,27 +265,27 @@ const Tech = () => {
         >
           <TechPaper title="Tools and others">
             <FaNpm style={npmStyle} />
-            <Typography variant="h6" sx={iconTitle}>
+            <Typography variant="subtitle1" sx={iconTitle}>
               npm
             </Typography>
             <FaGitAlt style={gitStyle} />
-            <Typography variant="h6" sx={iconTitle}>
+            <Typography variant="subtitle1" sx={iconTitle}>
               git
             </Typography>
             <FaTerminal style={terminalStyle} />
-            <Typography variant="h6" sx={iconTitle}>
+            <Typography variant="subtitle1" sx={iconTitle}>
               Terminal
             </Typography>
             <FaFigma style={figmaStyle} />
-            <Typography variant="h6" sx={iconTitle}>
+            <Typography variant="subtitle1" sx={iconTitle}>
               Figma
             </Typography>
             <FaUbuntu style={ubuntuStyle} />
-            <Typography variant="h6" sx={iconTitle}>
+            <Typography variant="subtitle1" sx={iconTitle}>
               Ubuntu
             </Typography>
             <SiVercel style={vercelStyle} />
-            <Typography variant="h6" sx={iconTitle}>
+            <Typography variant="subtitle1" sx={iconTitle}>
               Vercel
             </Typography>
           </TechPaper>

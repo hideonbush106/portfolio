@@ -17,7 +17,7 @@ const Intro = () => {
           sx={{
             textAlign: "center",
             my: 3,
-            width: { xs: "80%", sm: "40%" },
+            width: { xs: "80%", sm: "60%" },
             mx: "auto",
           }}
           variant="h6"
