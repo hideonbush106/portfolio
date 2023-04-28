@@ -22,7 +22,14 @@ const Hero = () => {
           flexDirection: "column",
         }}
       >
-        <Box sx={{ width: "100%", justifyContent: "center" }}>
+        <Box
+          cascade
+          component={Fade}
+          direction="down"
+          triggerOnce="true"
+          duration={1200}
+          sx={{ width: "100%", justifyContent: "center" }}
+        >
           <Typography
             sx={{
               fontSize: { xs: "2rem", sm: "3rem" },
@@ -46,8 +53,6 @@ const Hero = () => {
               loop: true,
             }}
           ></Typography>
-        </Box>
-        <AttentionSeeker effect="headShake" duration={1100}>
           <Typography
             variant="h5"
             sx={{
@@ -58,7 +63,6 @@ const Hero = () => {
           >
             I code and design beautiful things.
           </Typography>
-
           <Button
             sx={{
               width: "fit-content",
@@ -73,11 +77,13 @@ const Hero = () => {
           >
             Download CV
           </Button>
-        </AttentionSeeker>
+        </Box>
       </Box>
       <Box
-        component={AttentionSeeker}
-        effect="headShake" duration={1100}
+        component={Fade}
+        direction="up"
+        duration={1200}
+        triggerOnce="true"
         sx={{
           width: { xs: "100%", sm: "50%" },
         }}

@@ -9,11 +9,10 @@ const Intro = () => {
       bgcolor={theme.palette.mode === "dark" ? "#323f4a" : "#6e07f3"}
       sx={{ color: "#FFF", py: 10, px: 4 }}
     >
-      <AttentionSeeker effect="headShake" duration={1100}>
+      <Fade cascade direction="down" duration={1200} triggerOnce="true">
         <Typography sx={{ textAlign: "center" }} variant="h4">
           I am Nguyen Hoai Phong. Nice to meet you.
         </Typography>
-
         <Typography
           sx={{
             textAlign: "center",
@@ -26,7 +25,7 @@ const Intro = () => {
           I am a wandering Front-end developer finding my way to Full Stack
           developer. I love self-learning and exproing things.
         </Typography>
-      </AttentionSeeker>
+      </Fade>
     </Box>
   );
 };

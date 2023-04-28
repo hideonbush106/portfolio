@@ -131,21 +131,21 @@ const Tech = () => {
   };
   return (
     <Box>
-      <AttentionSeeker effect="headShake" duration={1100}>
+      <Fade cascade direction="down" duration={1200} triggerOnce="true">
         <Typography
           variant="h4"
           sx={{ marginTop: 9, textAlign: "center", width: "100%" }}
         >
-          Tech Stack
+          Technologies stack
         </Typography>
         <Typography
           variant="h6"
           sx={{ marginTop: 3, textAlign: "center", width: "100%" }}
         >
           This is what I've learned in my career. I'm focusing on Front-end
-          development and praticing Back-end development
+          development and praticing Back-end development.
         </Typography>
-      </AttentionSeeker>
+      </Fade>
       <Box
         sx={{
           py: 10,
@@ -157,10 +157,12 @@ const Tech = () => {
         }}
       >
         <Box
-          component={AttentionSeeker}
           sx={{ width: { xs: "100%", sm: "20%" }, my: 2 }}
-          effect="headShake"
-          duration={1100}
+          component={Fade}
+          cascade
+          direction="up"
+          duration={1200}
+          triggerOnce="true"
         >
           <TechPaper title="Languages">
             <FaHtml5 style={htmlStyle} />
@@ -186,10 +188,13 @@ const Tech = () => {
           </TechPaper>
         </Box>
         <Box
-          component={AttentionSeeker}
+          component={Fade}
+          cascade
+          direction="down"
+          duration={1200}
+          triggerOnce="true"
           sx={{ width: { xs: "100%", sm: "20%" }, my: 2 }}
           effect="headShake"
-          duration={1100}
         >
           <TechPaper title="Front-end">
             <FaBootstrap style={bootstrapStyle} />
@@ -215,10 +220,12 @@ const Tech = () => {
           </TechPaper>
         </Box>
         <Box
-          component={AttentionSeeker}
           sx={{ width: { xs: "100%", sm: "20%" }, my: 2 }}
-          effect="headShake"
-          duration={1100}
+          component={Fade}
+          cascade
+          direction="up"
+          duration={1200}
+          triggerOnce="true"
         >
           <TechPaper title="Back-end">
             <FaNodeJs style={nodejsStyle} />
@@ -244,15 +251,17 @@ const Tech = () => {
           </TechPaper>
         </Box>
         <Box
-          component={AttentionSeeker}
           sx={{ width: { xs: "100%", sm: "20%" }, my: 2 }}
-          effect="headShake"
-          duration={1100}
+          component={Fade}
+          cascade
+          direction="down"
+          duration={1200}
+          triggerOnce="true"
         >
           <TechPaper title="Tools and others">
             <FaNpm style={npmStyle} />
             <Typography variant="h6" sx={iconTitle}>
-              NPM
+              npm
             </Typography>
             <FaGitAlt style={gitStyle} />
             <Typography variant="h6" sx={iconTitle}>
