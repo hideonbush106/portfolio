@@ -11,6 +11,7 @@ const Hero = () => {
         display: "flex",
         flexWrap: "wrap",
         justifyContent: "space-between",
+        height: "100vh",
       }}
     >
       <Box
@@ -80,15 +81,15 @@ const Hero = () => {
         </Box>
       </Box>
       <Box
-        component={Fade}
-        direction="up"
-        duration={1200}
-        triggerOnce="true"
         sx={{
           width: { xs: "100%", sm: "50%" },
         }}
       >
         <Box
+          component={Fade}
+          direction="up"
+          duration={1200}
+          triggerOnce="true"
           sx={{
             margin: { xs: "2rem 0", sm: 0 },
           }}
