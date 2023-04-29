@@ -22,7 +22,7 @@ import ColorModeContext from "../../../ColorModeContext";
 import { blueGrey } from "@mui/material/colors";
 
 const drawerWidth = 240;
-const navItems = ["Home", "About", "Projects", "Contact"];
+const navItems = ["Home", "Education", "Projects", "Contact"];
 
 function DrawerAppBar(props) {
   const { window } = props;
@@ -66,9 +66,7 @@ function DrawerAppBar(props) {
               }`}
               sx={{ textAlign: "center" }}
             >
-              <ListItemText
-                primary={item}
-              />
+              <ListItemText primary={item} />
             </ListItemButton>
           </ListItem>
         ))}

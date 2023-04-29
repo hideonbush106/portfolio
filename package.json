@@ -14,6 +14,7 @@
     "@fontsource/public-sans": "^4.5.12",
     "@fontsource/roboto": "^4.5.8",
     "@mui/icons-material": "^5.11.16",
+    "@mui/lab": "^5.0.0-alpha.128",
     "@mui/material": "^5.12.2",
     "react": "^18.2.0",
     "react-awesome-reveal": "^4.2.3",
