@@ -4,6 +4,7 @@ import useTheme from "@mui/material/styles/useTheme";
 import { blueGrey } from "@mui/material/colors";
 import Typography from "@mui/material/Typography";
 import { Link } from "react-router-dom";
+import { Link as MuiLink } from "@mui/material";
 import { Email, FacebookRounded, GitHub, LinkedIn } from "@mui/icons-material";
 
 const Footer = () => {
@@ -71,15 +72,15 @@ const Footer = () => {
           justifyContent: { sm: "flex-end", xs: "center" },
         }}
       >
-        <a target="_blank" href="https://www.linkedin.com/in/phonghoai/">
+        <MuiLink color="secondary" target="_blank" href="https://www.linkedin.com/in/phonghoai/">
           <LinkedIn sx={iconStyle} />
-        </a>
-        <a target="_blank" href="https://github.com/hideonbush106">
+        </MuiLink>
+        <MuiLink color="secondary" target="_blank" href="https://github.com/hideonbush106">
           <GitHub sx={iconStyle} />
-        </a>
-        <a target="_blank" href="mailto:andyhoaiphong2003@gmail.com">
+        </MuiLink>
+        <MuiLink color="secondary" target="_blank" href="mailto:andyhoaiphong2003@gmail.com">
           <Email sx={iconStyle} />
-        </a>
+        </MuiLink>
       </Box>
     </Box>
   );
