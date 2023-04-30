@@ -33,15 +33,11 @@ const Footer = () => {
         <Typography
           variant="h5"
           component={Link}
+          color="secondary"
           to="/"
           sx={{
             textAlign: { sm: "left", xs: "center" },
             textDecoration: "none",
-            color: `${
-              theme.palette.mode === "dark"
-                ? "#ffb300 !important"
-                : "#6e07f3 !important"
-            }`,
             letterSpacing: 2,
             fontWeight: "700",
           }}
