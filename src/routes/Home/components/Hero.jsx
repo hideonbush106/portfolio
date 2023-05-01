@@ -11,7 +11,7 @@ const Hero = () => {
         display: "flex",
         flexWrap: "wrap",
         justifyContent: "space-between",
-        height: "100vh",
+        height: { sm: "100vh", xs: "110vh" },
       }}
     >
       <Box

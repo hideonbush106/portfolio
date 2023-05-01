@@ -13,6 +13,7 @@ import {
   FaTerminal,
   FaFigma,
   FaUbuntu,
+  FaJava,
 } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
 import {
@@ -23,6 +24,7 @@ import {
   SiMicrosoftsqlserver,
   SiExpress,
   SiVercel,
+  SiJavascript,
 } from "react-icons/si";
 import { TbSql } from "react-icons/tb";
 import { AttentionSeeker, Fade, Slide } from "react-awesome-reveal";
@@ -178,11 +180,11 @@ const Tech = () => {
             <Typography variant="subtitle1" sx={iconTitle}>
               CSS3
             </Typography>
-            <IoLogoJavascript style={jsStyle} />
+            <SiJavascript style={jsStyle} />
             <Typography variant="subtitle1" sx={iconTitle}>
               Javascript
             </Typography>
-            <FaCoffee style={javaStyle} />
+            <FaJava style={javaStyle} />
             <Typography variant="subtitle1" sx={iconTitle}>
               Java
             </Typography>
@@ -249,7 +251,7 @@ const Tech = () => {
             <Typography variant="subtitle1" sx={iconTitle}>
               Microsoft SQL Server
             </Typography>
-            <FaCoffee style={javaStyle} />
+            <FaJava style={javaStyle} />
             <Typography variant="subtitle1" sx={iconTitle}>
               Java Servlet
             </Typography>

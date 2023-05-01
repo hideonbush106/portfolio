@@ -44,13 +44,29 @@ const ContactInfo = (props) => {
               <ListItemIcon>
                 <Email />
               </ListItemIcon>
-              <ListItemText>andyhoaiphong2003@gmail.com</ListItemText>
+              <ListItemText>
+                <Link
+                  color="secondary"
+                  underline="hover"
+                  href="mailto:andyhoaiphong2003@gmail.com"
+                >
+                  andyhoaiphong2003@gmail.com
+                </Link>
+              </ListItemText>
             </ListItem>
             <ListItem>
               <ListItemIcon>
                 <Phone />
               </ListItemIcon>
-              <ListItemText>(+84) 834756222</ListItemText>
+              <ListItemText>
+                <Link
+                  color="secondary"
+                  underline="hover"
+                  href="tel:+84834756222"
+                >
+                  (+84) 834756222
+                </Link>
+              </ListItemText>
             </ListItem>
             <ListItem>
               <ListItemIcon>

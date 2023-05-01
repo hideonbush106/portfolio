@@ -2,6 +2,7 @@ import { Box, Button, Paper, TextField, Typography } from "@mui/material";
 import React from "react";
 import { Fade } from "react-awesome-reveal";
 import emailjs from "@emailjs/browser";
+import { toast } from "react-toastify";
 const ContactForm = (props) => {
   const form = React.useRef();
 
@@ -17,10 +18,30 @@ const ContactForm = (props) => {
       )
       .then(
         (result) => {
+          toast.success("Message sent successfully!", {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "colored",
+          });
           console.log(result.text);
         },
         (error) => {
           console.log(error.text);
+          toast.error("Error", {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "colored",
+          });
         }
       );
   };
@@ -59,10 +80,27 @@ const ContactForm = (props) => {
               display: "flex",
               flexWrap: "wrap",
               justifyContent: "space-between",
+              marginLeft: "4%",
+              marginBottom: "4%",
+              width: "92%",
             }}
           >
+            {/** <TextField
+          sx={{ marginLeft: "4%", marginBottom: "4%", width: "92%" }}
+          color="secondary"
+          label="Message"
+          multiline
+          rows={4}
+          name="message"
+          required
+        />*/}
             <TextField
-              sx={{ my: "4%", marginLeft: "4%", width: "44%" }}
+              sx={{
+                marginTop: "5%",
+                marginBottom: "2%",
+                marginLeft: "4%",
+                width: { sm: "44%", xs: "92%" },
+              }}
               color="secondary"
               label="Full Name"
               name="from_name"
@@ -70,7 +108,13 @@ const ContactForm = (props) => {
             />
 
             <TextField
-              sx={{ my: "4%", marginRight: "4%", width: "44%" }}
+              sx={{
+                marginBottom: "2%",
+                marginTop: { xs: "2%", sm: "5%" },
+                marginRight: "4%",
+                marginLeft: { xs: "4%" },
+                width: { sm: "44%", xs: "92%" },
+              }}
               type="email"
               color="secondary"
               label="Email"
@@ -79,7 +123,12 @@ const ContactForm = (props) => {
             />
 
             <TextField
-              sx={{ marginBottom: "4%", marginLeft: "4%", width: "44%" }}
+              sx={{
+                my: "2%",
+                marginBottom: "2%",
+                marginLeft: "4%",
+                width: { sm: "44%", xs: "92%" },
+              }}
               type="tel"
               color="secondary"
               label="Phone No."
@@ -88,7 +137,13 @@ const ContactForm = (props) => {
             />
 
             <TextField
-              sx={{ marginBottom: "4%", marginRight: "4%", width: "44%" }}
+              sx={{
+                my: "2%",
+                marginBottom: "2%",
+                marginLeft: { xs: "4%" },
+                marginRight: "4%",
+                width: { sm: "44%", xs: "92%" },
+              }}
               color="secondary"
               label="Subject"
               name="subject"
@@ -96,7 +151,12 @@ const ContactForm = (props) => {
             />
 
             <TextField
-              sx={{ marginLeft: "4%", marginBottom: "4%", width: "92%" }}
+              sx={{
+                my: "2%",
+                marginLeft: "4%",
+                marginBottom: "4%",
+                width: "92%",
+              }}
               color="secondary"
               label="Message"
               multiline
@@ -109,7 +169,7 @@ const ContactForm = (props) => {
                 type="submit"
                 color="secondary"
                 variant="contained"
-                sx={{ mx: "auto" }}
+                sx={{ mx: "auto", my: { xs: "5%", sm: "0" } }}
                 size="large"
               >
                 Submit

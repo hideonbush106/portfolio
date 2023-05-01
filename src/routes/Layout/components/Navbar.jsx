@@ -39,13 +39,10 @@ function DrawerAppBar(props) {
         component={Link}
         to="/"
         variant="h5"
+        color="secondary"
         sx={{
           lineHeight: 3,
-          color: `${
-            theme.palette.mode === "dark"
-              ? "#ffb300 !important"
-              : "#6e07f3 !important"
-          }`,
+
           letterSpacing: 2,
           fontWeight: "700",
           textDecoration: "none",

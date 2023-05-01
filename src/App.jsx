@@ -7,9 +7,8 @@ import Project from "./routes/Projects/Project";
 import Contact from "./routes/Contact/Contact";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import ColorModeContext from "./ColorModeContext";
-import getDesignTokens from "./ModeTheme"
+import getDesignTokens from "./ModeTheme";
 const App = () => {
-
   const [mode, setMode] = React.useState("dark");
   const colorMode = React.useMemo(
     () => ({
