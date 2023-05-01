@@ -44,15 +44,13 @@ const ContactInfo = (props) => {
               <ListItemIcon>
                 <Email />
               </ListItemIcon>
-              <ListItemText>
-                <Link
-                  color="secondary"
-                  underline="hover"
-                  href="mailto:andyhoaiphong2003@gmail.com"
-                >
-                  andyhoaiphong2003@gmail.com
-                </Link>
-              </ListItemText>
+              <Link
+                color="secondary"
+                underline="hover"
+                href="mailto:andyhoaiphong2003@gmail.com"
+              >
+                andyhoaiphong2003@gmail.com
+              </Link>
             </ListItem>
             <ListItem>
               <ListItemIcon>
