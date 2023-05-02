@@ -26,47 +26,11 @@ const Project = () => {
         <Grid container spacing={5} sx={{ p: 5 }}>
           <Grid item sm={4} xs={12}>
             <ProjectCard
-              projectImg="assets/project1.jpg"
-              title="F-Code IQ Challenge"
-              description="IQ test web page for K18 students in FPT Universify HCMC"
-              webLink="https://iqchallenge.vercel.app/"
-              sourceLink="https://github.com/hideonbush106/iqchallenge"
-            />
-          </Grid>
-          <Grid item sm={4} xs={12}>
-            <ProjectCard
-              projectImg="assets/project1.jpg"
-              title="F-Code IQ Challenge"
-              description="IQ test web page for K18 students in FPT Universify HCMC"
-              webLink="https://iqchallenge.vercel.app/"
-              sourceLink="https://github.com/hideonbush106/iqchallenge"
-            />
-          </Grid>
-          <Grid item sm={4} xs={12}>
-            <ProjectCard
-              projectImg="assets/project1.jpg"
-              title="F-Code IQ Challenge"
-              description="IQ test web page for K18 students in FPT Universify HCMC"
-              webLink="https://iqchallenge.vercel.app/"
-              sourceLink="https://github.com/hideonbush106/iqchallenge"
-            />
-          </Grid>
-          <Grid item sm={4} xs={12}>
-            <ProjectCard
-              projectImg="assets/project1.jpg"
-              title="F-Code IQ Challenge"
-              description="IQ test web page for K18 students in FPT Universify HCMC"
-              webLink="https://iqchallenge.vercel.app/"
-              sourceLink="https://github.com/hideonbush106/iqchallenge"
-            />
-          </Grid>
-          <Grid item sm={4} xs={12}>
-            <ProjectCard
-              projectImg="assets/project1.jpg"
-              title="F-Code IQ Challenge"
-              description="IQ test web page for K18 students in FPT Universify HCMC"
-              webLink="https://iqchallenge.vercel.app/"
-              sourceLink="https://github.com/hideonbush106/iqchallenge"
+              projectImg="assets/project2.jpg"
+              title="Lorem Picsum masonry"
+              description="My very first Javascript project, using DOM and asynchronous"
+              webLink="https://masonry-hideonbush106.vercel.app/"
+              sourceLink="https://github.com/hideonbush106/masonry"
             />
           </Grid>
           <Grid item sm={4} xs={12}>
