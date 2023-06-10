@@ -5,7 +5,8 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
-import { Code, Launch } from "@mui/icons-material";
+import { Code, Launch, Warning } from "@mui/icons-material";
+import { BiGitBranch } from "react-icons/bi";
 
 export default function ProjectCard(props) {
   return (
@@ -27,21 +28,35 @@ export default function ProjectCard(props) {
         <Button
           color="secondary"
           target="_blank"
-          href={props.webLink}
-          variant="contained"
-          endIcon={<Launch />}
-        >
-          Link
-        </Button>
-        <Button
-          color="secondary"
-          target="_blank"
           href={props.sourceLink}
           variant="contained"
           endIcon={<Code />}
         >
           source
         </Button>
+
+        {props.development ? (
+          <Button
+            disabled
+            color="secondary"
+            target="_blank"
+            href={props.sourceLink}
+            variant="contained"
+            endIcon={<Warning />}
+          >
+            in development
+          </Button>
+        ) : (
+          <Button
+            color="secondary"
+            target="_blank"
+            href={props.webLink}
+            variant="contained"
+            endIcon={<Launch />}
+          >
+            Link
+          </Button>
+        )}
       </CardActions>
     </Card>
   );

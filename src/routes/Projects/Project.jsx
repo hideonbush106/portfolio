@@ -42,6 +42,16 @@ const Project = () => {
               sourceLink="https://github.com/hideonbush106/iqchallenge"
             />
           </Grid>
+          <Grid item sm={4} xs={12}>
+            <ProjectCard
+              projectImg="assets/project3.jpg"
+              title="Document Management System"
+              description="A web application for managing documents in a company using ReactJS and Firebase"
+              development={true}
+              webLink="https://iqchallenge.vercel.app/"
+              sourceLink="https://github.com/hideonbush106/DocManagementSystem"
+            />
+          </Grid>
         </Grid>
       </Fade>
     </Box>
