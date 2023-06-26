@@ -220,10 +220,10 @@ const Tech = () => {
             <Typography variant="subtitle1" sx={iconTitle}>
               React router
             </Typography>
-            <SiRedux style={reduxStyle} />
+            {/* <SiRedux style={reduxStyle} />
             <Typography variant="subtitle1" sx={iconTitle}>
               Redux
-            </Typography>
+            </Typography> */}
           </TechPaper>
         </Box>
         <Box
@@ -278,14 +278,14 @@ const Tech = () => {
             <Typography variant="subtitle1" sx={iconTitle}>
               Terminal
             </Typography>
-            <FaFigma style={figmaStyle} />
+            {/* <FaFigma style={figmaStyle} />
             <Typography variant="subtitle1" sx={iconTitle}>
               Figma
-            </Typography>
-            <FaUbuntu style={ubuntuStyle} />
+            </Typography> */}
+            {/* <FaUbuntu style={ubuntuStyle} />
             <Typography variant="subtitle1" sx={iconTitle}>
               Ubuntu
-            </Typography>
+            </Typography> */}
             <SiVercel style={vercelStyle} />
             <Typography variant="subtitle1" sx={iconTitle}>
               Vercel
