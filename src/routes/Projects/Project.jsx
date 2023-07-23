@@ -47,8 +47,7 @@ const Project = () => {
               projectImg="assets/project3.jpg"
               title="Document Management System"
               description="A web application for managing documents in a company using ReactJS and Firebase"
-              development={true}
-              webLink="https://iqchallenge.vercel.app/"
+              webLink="https://www.fptuhcm-capstone.tech/"
               sourceLink="https://github.com/hideonbush106/DocManagementSystem"
             />
           </Grid>
